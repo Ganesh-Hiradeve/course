@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn</title>
+    <style>
+        body{
+            background-color:white;
+        }
+        .red3{
+            font-size: 5rem;
+            color:white;
+            position: relative;
+
+        }
+        .red3 span{
+            mix-blend-mode: difference;
+        }
+        .red3::after{
+            content:'';
+            position: absolute;
+            height: calc(100% - 40px);
+           left: 0;
+           top: 20px;
+           width: 3%;
+           background-color:papayawhip;
+           z-index: -1;
+            color: black;
+            overflow: hidden;
+            animation: animate 9s infinite linear; 
+
+        } 
+         @keyframes animate{
+          0%,100%{
+                transform: translateX(0px);
+
+            }
+            50%{
+                transform: translateX(980px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red3">
+        <span>Complete Interview Preparation</span>
+    </div>
+    <p>my app</p>
+
+</body>
+</html>
